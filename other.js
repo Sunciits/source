@@ -249,7 +249,7 @@
         retrieveFromStorage: retrieveFromStorage,
         settings: {
             botName: "helllo :3",
-            language: "english",
+            language: "latvian",
             chatLink: "https://rawgit.com/Sunciits/source/master/lang/lv-LV.json",
             scriptLink: "https://rawgit.com/Sunciits/source/master/basicBot.js",
             roomLock: false, // Requires an extension to re-load the script
