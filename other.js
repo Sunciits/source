@@ -240,7 +240,7 @@
         status: false,
         name: "Hello :3",
         loggedInID: null,
-        scriptLink: "https://rawgit.com/Sunciits/source/master/basicBot.js",
+        scriptLink: "https://rawgit.com/Sunciits/source/master/other.js",
         cmdLink: "http://git.io/245Ppg",
         chatLink: "https://rawgit.com/Sunciits/source/master/lang/lv-LV.json",
         chat: null,
@@ -251,7 +251,7 @@
             botName: "helllo :3",
             language: "latvian",
             chatLink: "https://rawgit.com/Sunciits/source/master/lang/lv-LV.json",
-            scriptLink: "https://rawgit.com/Sunciits/source/master/basicBot.js",
+            scriptLink: "https://rawgit.com/Sunciits/source/master/other.js",
             roomLock: false, // Requires an extension to re-load the script
             startupCap: 1, // 1-200
             startupVolume: 0, // 0-100
