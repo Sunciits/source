@@ -12,7 +12,7 @@
         window.location = 'https://stg.plug.dj' + room.name;
     };*/
 
-    API.getWaitListPosition = function(id){
+    API.getWaitListPosition = function(id)
         if(typeof id === 'undefined' || id === null){
             id = API.getUser().id;
         }
