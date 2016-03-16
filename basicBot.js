@@ -12,7 +12,7 @@
         window.location = 'https://stg.plug.dj' + room.name;
     };*/
 
-    API.getWaitListPosition = function(id)
+    API.getWaitListPosition = function(id){
         if(typeof id === 'undefined' || id === null){
             id = API.getUser().id;
         }
@@ -238,9 +238,9 @@
     var basicBot = {
         version: "2.8.15",
         status: false,
-        name: "basicBot",
+        name: "Hello :3",
         loggedInID: null,
-        scriptLink: "https://rawgit.com/bscBot/source/master/basicBot.js",
+        scriptLink: "https://rawgit.com/Sunciits/source/master/basicBot.js",
         cmdLink: "http://git.io/245Ppg",
         chatLink: "https://rawgit.com/bscBot/source/master/lang/en.json",
         chat: null,
@@ -248,10 +248,10 @@
         retrieveSettings: retrieveSettings,
         retrieveFromStorage: retrieveFromStorage,
         settings: {
-            botName: "basicBot",
+            botName: "helllo :3",
             language: "english",
             chatLink: "https://rawgit.com/bscBot/source/master/lang/en.json",
-            scriptLink: "https://rawgit.com/bscBot/source/master/basicBot.js",
+            scriptLink: "https://rawgit.com/Sunciits/source/master/basicBot.js",
             roomLock: false, // Requires an extension to re-load the script
             startupCap: 1, // 1-200
             startupVolume: 0, // 0-100
