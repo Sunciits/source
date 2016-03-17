@@ -240,9 +240,9 @@
         status: false,
         name: "Hello :3",
         loggedInID: null,
-        scriptLink: "https://rawgit.com/Sunciits/source/master/other.js",
+        scriptLink: "https://rawgit.com/Sunciits/source/master/others.js",
         cmdLink: "http://git.io/245Ppg",
-        chatLink: "https://rawgit.com/Sunciits/source/master/lang/lv-LV.json",
+        chatLink: "https://rawgit.com/Sunciits/source/master/lang/lv.json",
         chat: null,
         loadChat: loadChat,
         retrieveSettings: retrieveSettings,
@@ -250,8 +250,8 @@
         settings: {
             botName: "helllo :3",
             language: "latvian",
-            chatLink: "https://rawgit.com/Sunciits/source/master/lang/lv-LV.json",
-            scriptLink: "https://rawgit.com/Sunciits/source/master/other.js",
+            chatLink: "https://rawgit.com/Sunciits/source/master/lang/lv.json",
+            scriptLink: "https://rawgit.com/Sunciits/source/master/others.js",
             roomLock: false, // Requires an extension to re-load the script
             startupCap: 1, // 1-200
             startupVolume: 0, // 0-100
