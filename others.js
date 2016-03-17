@@ -242,7 +242,7 @@
         loggedInID: null,
         scriptLink: "https://rawgit.com/Sunciits/source/master/others.js",
         cmdLink: "http://git.io/245Ppg",
-        chatLink: "https://rawgit.com/Sunciits/source/master/lang/lv.json",
+        chatLink: "https://rawgit.com/Sunciits/source/master/lang/lv-LV.json",
         chat: null,
         loadChat: loadChat,
         retrieveSettings: retrieveSettings,
@@ -250,7 +250,7 @@
         settings: {
             botName: "helllo :3",
             language: "latvian",
-            chatLink: "https://rawgit.com/Sunciits/source/master/lang/lv.json",
+            chatLink: "https://rawgit.com/Sunciits/source/master/lang/lv-LV.json",
             scriptLink: "https://rawgit.com/Sunciits/source/master/others.js",
             roomLock: false, // Requires an extension to re-load the script
             startupCap: 1, // 1-200
