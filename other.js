@@ -1953,11 +1953,12 @@
                 }
             },
         
-             cakeCommand: {
+
+            cakeCommand: {
                 command: 'cake',
                 rank: 'user',
                 type: 'startsWith',
-                getCookie: function (chat) {
+                getCake: function (chat) {
                     var c = Math.floor(Math.random() * basicBot.chat.cakes.length);
                     return basicBot.chat.cakes[c];
                 },
