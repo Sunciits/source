@@ -2031,56 +2031,6 @@
                 }
             },
 
-            /*
-
-            // This does not work anymore.
-
-            deletechatCommand: {
-                command: 'deletechat',
-                rank: 'mod',
-                type: 'startsWith',
-                functionality: function (chat, cmd) {
-                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
-                    if (!basicBot.commands.executable(this.rank, chat)) return void (0);
-                    else {
-                        var msg = chat.message;
-                        if (msg.length === cmd.length) return API.sendChat(subChat(basicBot.chat.nouserspecified, {name: chat.un}));
-                        var name = msg.substring(cmd.length + 2);
-                        var user = basicBot.userUtilities.lookupUserName(name);
-                        if (typeof user === 'boolean') return API.sendChat(subChat(basicBot.chat.invaliduserspecified, {name: chat.un}));
-                        var chats = $('.from');
-                        var message = $('.message');
-                        var emote = $('.emote');
-                        var from = $('.un.clickable');
-                        for (var i = 0; i < chats.length; i++) {
-                            var n = from[i].textContent;
-                            if (name.trim() === n.trim()) {
-
-                                // var messagecid = $(message)[i].getAttribute('data-cid');
-                                // var emotecid = $(emote)[i].getAttribute('data-cid');
-                                // API.moderateDeleteChat(messagecid);
-
-                                // try {
-                                //     API.moderateDeleteChat(messagecid);
-                                // }
-                                // finally {
-                                //     API.moderateDeleteChat(emotecid);
-                                // }
-
-                                if (typeof $(message)[i].getAttribute('data-cid') == "undefined"){
-                                    API.moderateDeleteChat($(emote)[i].getAttribute('data-cid')); // works well with normal messages but not with emotes due to emotes and messages are seperate.
-                                } else {
-                                    API.moderateDeleteChat($(message)[i].getAttribute('data-cid'));
-                                }
-                            }
-                        }
-                        API.sendChat(subChat(basicBot.chat.deletechat, {name: chat.un, username: name}));
-                    }
-                }
-            },
-
-            */
-
             deletechatCommand: {
                 command: 'deletechat',
                 rank: 'mod',
@@ -2121,19 +2071,19 @@
             },
 
             englishCommand: {
-                command: 'english',
+                command: 'lv',
                 rank: 'bouncer',
                 type: 'startsWith',
                 functionality: function (chat, cmd) {
                     if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
                     if (!basicBot.commands.executable(this.rank, chat)) return void (0);
                     else {
-                        if(chat.message.length === cmd.length) return API.sendChat('/me No user specified.');
+                        if(chat.message.length === cmd.length) return API.sendChat('/No user specified.');
                         var name = chat.message.substring(cmd.length + 2);
                         var user = basicBot.userUtilities.lookupUserName(name);
-                        if(typeof user === 'boolean') return API.sendChat('/me Invalid user specified.');
+                        if(typeof user === 'boolean') return API.sendChat('Invalid user specified.');
                         var lang = basicBot.userUtilities.getUser(user).language;
-                        var ch = '/me @' + name + ' ';
+                        var ch = '@' + name + ' ';
                         switch(lang){
                             case 'en': break;
                             case 'da': ch += 'Vær venlig at tale engelsk.'; break;
@@ -2147,7 +2097,7 @@
                             case 'cs': ch += 'Mluvte prosím anglicky.'; break;
                             case 'sr': ch += 'Молим Вас, говорите енглески.'; break;
                         }
-                        ch += ' English please.';
+                        ch += ' Latvian please.';
                         API.sendChat(ch);
                     }
                 }
